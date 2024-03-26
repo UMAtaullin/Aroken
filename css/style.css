@@ -24,7 +24,52 @@
 }
 
 .nav-link {
+	position: relative;
+	/* можем форматировать как блок */
+	display: inline-block;
 	color: #000;
 	font-family: 'Museo Sans Cyrl';
 	font-size: 16px;
+	margin-right: 20px;
+	/* Отступ для подчеркивания ссылки */
+	padding-bottom: 3px;
+}
+
+/* Для появления подчеркивания ссылки */
+.nav-link:hover::before {
+	left: 0;
+	right: 0;
+	transition: right 0.3c;
+}
+.nav-link::before {
+	background-color: rgba(0, 0, 0, 0.702);
+	bottom: 0%;
+	content: '';
+	height: 1px;
+	left: 100%;
+	position: absolute;
+	right: 100%;
+	transition: right 0s 0.3s;
+	left: 0.3s;
+}
+
+.nav-link:last-child {
+	margin-right: 0;
+}
+
+.social-link {
+	/* Отображение как блочный элемент для позиционирования */
+	display: inline-block;
+	margin-right: 20px;
+	/* Более плавное выделение объекта */
+	transition: transform 0.3s ease;
+}
+
+/* Выделяет объекты при наведении */
+.social-link:hover {
+	transform: scale(1.2);
+}
+
+.social-link:last-child {
+	margin-right: 0;
 }
