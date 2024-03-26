@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: local('Museo Sans Cyrl'),
+		url('../fonts/museosanscyrl-300.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 25;
+	padding-bottom: 20px;
+}
+
+.nav-link {
+	color: #000;
+	font-family: 'Museo Sans Cyrl';
+	font-size: 16px;
+	text-decoration: none;
+}
