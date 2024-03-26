@@ -13,10 +13,13 @@
 }
 
 .header {
+	/* Расположение в одну строчку */
 	display: flex;
+	/* За горизонтальное расположение */
 	justify-content: space-between;
+	/* За вертикальное расположение */
 	align-items: center;
-	padding-top: 25;
+	padding-top: 25px;
 	padding-bottom: 20px;
 }
 
@@ -24,5 +27,4 @@
 	color: #000;
 	font-family: 'Museo Sans Cyrl';
 	font-size: 16px;
-	text-decoration: none;
 }
