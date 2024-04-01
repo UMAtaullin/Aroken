@@ -7,6 +7,24 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: 'Evolventa';
+	src: local('Evolventa'),
+		url('../fonts/Evolventa-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Evolventa';
+	src: local('Evolventa'),
+		url('../fonts/Evolventa-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
 .container {
 	max-width: 1180px;
 	margin: 0 auto;
@@ -72,4 +90,42 @@
 
 .social-link:last-child {
 	margin-right: 0;
+}
+
+.hero-left {
+	max-width: 612px;
+	padding-top: 201px;
+}
+
+.hero-title {
+	color: #000;
+	font-family: Evolventa;
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 120%;
+	margin-bottom: 46px;
+}
+
+.hero-description {
+	color: #000;
+	font-family: Evolventa;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 140%;
+	margin-bottom: 67px;
+	min-width: 545px;
+
+}
+
+.hero-btn {
+	display: inline-block;
+	color: #1A1B16;
+	text-align: center;
+	font-family: Evolventa;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 140%;
+	border-radius: 10px;
+	background: #D2FE67;
+	padding: 20px 140px;
 }
